@@ -1,3 +1,8 @@
+:root{
+    --size-logo:50px;
+    --color-primary-logo:#ffffff;
+    --color-second-logo:#000000;
+}
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -60,4 +65,48 @@ footer{
     img{
         width: 60px;
     }
+}
+/*Logo*/
+.abstract-logo:hover{
+    cursor: pointer;
+    filter: brightness(75%);
+}
+.abstract-logo{
+    width: var(--size-logo);
+    height: var(--size-logo);
+    background-color: var(--color-primary-logo);
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abstract-div{
+    display: flex;
+    background-color: var(--color-second-logo);
+    width: 60%;
+    height: 60%;
+    align-items: end;
+}
+.abstract-div-white{
+    display: flex;
+    background-color: var(--color-primary-logo);
+    height: 85%;
+    width: 85%;
+    align-items: end;
+}
+.abstract-div-circle-black{
+    display: flex;
+    background-color: var(--color-second-logo);
+    height: 85%;
+    width: 85%;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.abstract-div-circle-white{
+    display: flex;
+    background-color: var(--color-primary-logo);
+    height: 60%;
+    width: 60%;
+    border-radius: 100%;
 }
